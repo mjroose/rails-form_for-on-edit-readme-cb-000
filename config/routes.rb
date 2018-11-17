@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   resources :posts, only: [:index, :show, :new, :create, :edit]
-  put 'posts/:id' => 'posts#update'
+  patch 'posts/:id' => 'posts#update'
 end
